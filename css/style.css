@@ -11,3 +11,20 @@ body {
     line-height: 1.6;
 }
 
+.header {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-glass);
+    backdrop-filter: var(--backdrop-blur);
+    border: var(--glass-border);
+    box-shadow: var(--shadow-glow);
+    padding: 0 25rem;
+    margin-top: 70px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 0 15rem;
+    }
+}

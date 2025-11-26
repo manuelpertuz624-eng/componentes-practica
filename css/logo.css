@@ -1,0 +1,34 @@
+/* =========================================
+   LAYOUT DEL INDEX (Solo para el logo)
+   ========================================= */
+
+/* Configuramos el contenedor específico del index */
+.main-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 25%;
+    height: 75px;
+    
+}
+
+.main-logo-container svg {
+    width: 250px; /* Ancho fijo para el logo */
+    height: auto; /* Altura automática para mantener proporciones */
+    transition: transform 0.3s ease;
+}
+
+
+.key-white:hover{
+    fill: var(--brand-gray);
+
+}
+
+@media (max-width: 800px) {
+    .main-logo-container svg{        
+    width: 180px; /* Ancho fijo para el logo */
+    height: auto; /* Altura automática para mantener proporciones */
+    transition: transform 0.3s ease;
+    }
+}
