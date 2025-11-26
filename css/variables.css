@@ -1,0 +1,41 @@
+/* =========================================
+   1. FUENTES (Modernas y Tecnológicas)
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    /* =========================================
+       2. IDENTIDAD CORPORATIVA (Brandbook)
+       ========================================= */
+    --brand-blue-dark:   #223F61;
+    --brand-blue-light:  #93B6EE;
+    --brand-blue-neo:    #426080;
+    --brand-orange:      #E78C3B;
+    --brand-white:       #dddddd;
+    --brand-gray:        #CDCDCD;
+
+    /* =========================================
+       3. SISTEMA DE DISEÑO
+       ========================================= */
+    
+    /* Tipografía */
+    --font-display: 'Outfit', sans-serif;
+    --font-body:    'Inter', sans-serif;
+
+    /* Mapeo de Colores */
+    --color-bg-dark:    var(--brand-blue-dark);
+    --color-text-main:  #ffffff;
+    --color-text-body:  var(--brand-white);
+    --color-text-muted: var(--brand-gray);
+
+    --color-primary:    var(--brand-blue-light);
+    --color-accent:     var(--brand-orange);
+    
+    /* Efectos Visuales */
+    --color-glass:       rgba(34, 63, 97, 0.85); 
+    --glass-border:      1px solid rgba(147, 182, 238, 0.15); 
+    --backdrop-blur:     blur(12px);
+    
+    --shadow-glow:       0 0 30px rgba(147, 182, 238, 0.3);
+    --shadow-glow-action: 0 4px 20px rgba(231, 140, 59, 0.4);
+}
