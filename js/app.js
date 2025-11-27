@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     // Cargar el logo
-    loadComponent("main-logo-container", "components/logo.html");
+    loadComponent("main-logo-container", "components/logo.html")
+    .then(() => {
+        // UNA VEZ CARGADO EL HEADER, CARGAMOS SUS HIJOS:
+
+        // Cargar logo dentro del header
+        loadComponent("logo-container-header", "components/logo.html");
+
+        // B. Cargar el Menú dentro del Header
+        loadComponent("main-menu-container", "components/menu.html");
+    });
 });
 
 // Función para cargar HTML (No cambia)
@@ -11,6 +21,8 @@ async function loadComponent(elementId, filePath) {
         const response = await fetch(filePath);
         if (response.ok) {
             element.innerHTML = await response.text();
+        } else {
+            console.error(`Error loading ${filePath}: ${response.statusText}`);
         }
     } catch (error) { console.error(error); }
 }

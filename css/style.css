@@ -15,12 +15,30 @@ body {
     min-height: 15vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--color-glass);
     backdrop-filter: var(--backdrop-blur);
     border: var(--glass-border);
     box-shadow: var(--shadow-glow);
     padding: 0 25rem;
     margin-top: 70px;
+}
+
+/* --- AJUSTE DE LAYOUT DEL HEADER --- */
+
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* OBLIGATORIO: Impide que el menú baje a una segunda línea */
+    flex-wrap: nowrap; 
+}
+
+#menu-container {
+    display: flex;
+    align-items: center;
+    /* Asegura que el contenedor se ajuste al contenido sin estirarse de más */
+    width: auto; 
 }
 
 @media (max-width: 800px) {
