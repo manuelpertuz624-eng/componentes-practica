@@ -8,12 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Cargar logo dentro del header
         loadComponent("logo-container-header", "components/logo.html");
 
-        // B. Cargar el Menú dentro del Header
         loadComponent("main-menu-container", "components/menu.html");
     });
 });
 
-// Función para cargar HTML (No cambia)
+// Función para cargar HTML 
 async function loadComponent(elementId, filePath) {
     const element = document.getElementById(elementId);
     if (!element) return;
@@ -28,7 +27,7 @@ async function loadComponent(elementId, filePath) {
 }
 
 /* =========================================
-   TU CÓDIGO DE AUDIO (ADAPTADO)
+   CÓDIGO DE AUDIO 
    ========================================= */
 
 // 1. Tus notas originales

@@ -1,10 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+* {    
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: var(--font-body);
     background-color: var(--color-bg-dark);
     color: var(--color-text-body);
@@ -24,22 +24,6 @@ body {
     margin-top: 70px;
 }
 
-/* --- AJUSTE DE LAYOUT DEL HEADER --- */
-
-.nav-right-group {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    /* OBLIGATORIO: Impide que el menú baje a una segunda línea */
-    flex-wrap: nowrap; 
-}
-
-#menu-container {
-    display: flex;
-    align-items: center;
-    /* Asegura que el contenedor se ajuste al contenido sin estirarse de más */
-    width: auto; 
-}
 
 @media (max-width: 800px) {
     .header {

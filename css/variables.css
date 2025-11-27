@@ -27,7 +27,8 @@
     --color-text-main:  #ffffff;
     --color-text-body:  var(--brand-white);
     --color-text-muted: var(--brand-gray);
-
+    --naranja-neon:     #f97316;
+    --azul-neon:        #3b82f6;  
     --color-primary:    var(--brand-blue-light);
     --color-accent:     var(--brand-orange);
     
@@ -38,4 +39,12 @@
     
     --shadow-glow:       0 0 30px rgba(147, 182, 238, 0.3);
     --shadow-glow-action: 0 4px 20px rgba(231, 140, 59, 0.4);
+
+    /* --- NUEVAS VARIABLES DE EFECTOS (FILTROS) --- */
+    
+    /* Efecto Glow Azul */
+    --glow-blue: drop-shadow(0 0 8px var(--azul-neon));
+    
+    /* Efecto Glow Naranja */
+    --glow-orange: drop-shadow(0 0 8px var(--naranja-neon));
 }
